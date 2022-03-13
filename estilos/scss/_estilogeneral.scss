@@ -12,6 +12,10 @@ a{
     color: black;
 }
 
+li{
+    list-style: none;
+}
+
 /*iconos faq - boton ingresar*/
 .preguntasFrecuentes svg, .boton-ingresar{
     margin-right: 8px;
@@ -32,3 +36,4 @@ a{
     text-align: center;
     margin: auto;
 }
+

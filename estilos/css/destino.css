@@ -9,6 +9,9 @@ a {
   text-decoration: none;
   color: black; }
 
+li {
+  list-style: none; }
+
 /*iconos faq - boton ingresar*/
 .preguntasFrecuentes svg, .boton-ingresar {
   margin-right: 8px; }
@@ -27,19 +30,137 @@ a {
   text-align: center;
   margin: auto; }
 
+/*Extends*/
+.rrss-tiktok, .rrss-facebook, .rrss-instagram, .mail-icon, .whatsapp-icon, .faq-icon {
+  width: 19px;
+  height: 19px;
+  fill: white;
+  filter: brightness(200%); }
+
+.rrss-facebook {
+  fill: #303097; }
+
+.rrss-instagram {
+  fill: #b6213a; }
+
+.mail-icon {
+  fill: white; }
+
+.whatsapp-icon {
+  fill: #1b7b16; }
+
+.faq-icon {
+  fill: #e11444; }
+
+/*Mixins*/
+.mediosDePago {
+  width: 280px;
+  height: 140px; }
+
+.mediosDeEnvio {
+  width: 280px;
+  height: 150px; }
+
+/*Anidamiento*/
+nav {
+  background-color: #0e0f19; }
+  nav .transicion {
+    transition: width 1s; }
+    nav .transicion:hover {
+      width: 290px; }
+  nav .nav-item {
+    text-align: center; }
+  nav .boton-logo {
+    background-color: #e11444; }
+  nav li {
+    color: #fffdfd; }
+  nav div .cart {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 22px;
+    height: 22px; }
+  nav .btn-dark {
+    background: none; }
+
+main {
+  background-color: #fffdfd;
+  /*sección productos*/
+  /*--contacto--*/
+  /*FAQ y guía de talles - boton menu*/ }
+  main h1 {
+    text-align: center;
+    margin: 15px; }
+  main .imagenRemeraDonRamon {
+    margin-right: 110px;
+    margin-bottom: 30px;
+    border: 3px outset #e11444;
+    border-radius: 0.25rem; }
+  main .input-text {
+    text-align: center;
+    width: 83px; }
+  main .espacio-input {
+    margin: 8px;
+    margin-top: 6px; }
+  main .botonCompra {
+    margin-top: 10px;
+    margin-bottom: 25px; }
+  main .input-flex {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px; }
+  main .formularioContacto, main .formularioContacto input, main .formularioContacto h2 {
+    text-align: center;
+    margin: 10px; }
+  main .preguntasFrecuentes {
+    text-align: center;
+    margin: 20px; }
+  main .preguntasFrecuentes li {
+    list-style: none; }
+  main .preguntasFrecuentes div {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center; }
+
+footer {
+  background-color: #0e0f19;
+  color: aliceblue;
+  /*h5*/ }
+  footer a {
+    color: aliceblue; }
+  footer .copy {
+    background-color: #e11444;
+    text-align: left;
+    grid-area: copy;
+    padding: 4px;
+    color: #0e0f19; }
+  footer .fuente-conectados {
+    margin-top: 15px; }
+  footer div .padre-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+  footer div .padre-flex svg {
+    margin: 10px; }
+
 /*RESPONSIVE*/
 /*SMARTPHONE*/
-@media (max-width: 420px) {
+@media (max-width: 576px) {
   /*--main--*/
   div .col {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
     align-items: center;
     text-align: center; }
   .nav-link {
     font-size: small;
     margin: 1px; }
+  .card {
+    width: 18rem;
+    margin-bottom: 30px; }
   /*paginas productos-faq-contacto-guia de talles*/
   .portadaUno {
     background-image: url(../../assets/carousel1.jpg);
@@ -73,19 +194,33 @@ a {
     padding: 8px;
     text-align: left;
     grid-area: copy; }
-  .mediosDePago {
-    width: 280px;
-    margin-top: 10px;
-    align-items: center;
-    filter: brightness(100%); } }
+  footer .btn {
+    margin-bottom: 20px; }
+  /*.mediosDePago{
+       /* width: 280px;
+        margin-top: 10px;
+        align-items: center;
+        filter: brightness(100%);
+        height: 130px;
+    }   
+
+    .mediosDeEnvio{
+        width: 280px;
+     height: 150px;
+    }*/ }
 
 /*TABLET*/
-@media (min-width: 768px) {
+@media (min-width: 577px) {
+  /*nav*/
+  .nav-link {
+    margin: 1px; }
   /*--main--*/
+  .card {
+    width: 20rem; }
   div .col {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    /*margin: 15px;*/
     align-items: center;
     margin-bottom: 25px;
     text-align: center; }
@@ -118,11 +253,17 @@ a {
 
 /*DESKTOP*/
 @media (min-width: 992px) {
-  .cardFlex {
+  .row-desktop {
+    width: 992px; }
+  .card {
+    width: 14rem;
+    height: 17rem; }
+  .container-fluid {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     text-align: center;
-    margin: 20px; }
+    /*margin: 20px;*/ }
   /*paginas productos-faq-contacto-guia de talles*/
   .portadaUno {
     background-image: url(../../assets/carousel1.jpg);
@@ -152,127 +293,13 @@ a {
     margin: auto;
     text-align: center; }
   .nav-item {
-    padding: 10px; } }
-
-/*Extends*/
-.rrss-tiktok, .rrss-facebook, .rrss-instagram, .mail-icon, .whatsapp-icon, .faq-icon {
-  width: 19px;
-  height: 19px;
-  fill: white;
-  filter: brightness(200%); }
-
-.rrss-facebook {
-  fill: #303097; }
-
-.rrss-instagram {
-  fill: #b6213a; }
-
-.mail-icon {
-  fill: white; }
-
-.whatsapp-icon {
-  fill: #1b7b16; }
-
-.faq-icon {
-  fill: #e11444; }
-
-/*Mixins*/
-.card {
-  width: 18rem;
-  height: 20rem; }
-
-.mediosDePago {
-  width: 330px;
-  height: 140px; }
-
-.mediosDeEnvio {
-  width: 205px;
-  height: 150px; }
-
-/*Anidamiento*/
-nav {
-  background-color: #0e0f19; }
-  nav .transicion {
-    transition: width 1s; }
-    nav .transicion:hover {
-      width: 290px; }
-  nav .nav-item {
-    text-align: center; }
-  nav .boton-logo {
-    background-color: #e11444; }
-  nav li {
-    color: #fffdfd; }
-  nav div .cart {
-    margin-right: 10px;
+    padding: 10px; }
+  /*footer*/
+  .mediosDePago {
+    width: 270px;
+    height: 120px;
+    margin-top: 18px; }
+  .mediosDeEnvio {
     margin-top: 10px;
-    width: 22px;
-    height: 22px; }
-
-main {
-  background-color: #fffdfd;
-  /*sección productos*/
-  /*--contacto--*/
-  /*FAQ y guía de talles - boton menu*/ }
-  main .cardFlex {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 20px; }
-  main h1 {
-    text-align: center;
-    margin: 15px; }
-  main .imagenRemeraDonRamon {
-    margin-right: 110px;
-    margin-bottom: 30px;
-    border: 3px outset #e11444;
-    border-radius: 0.25rem; }
-  main .input-text {
-    text-align: center;
-    width: 83px; }
-  main .espacio-input {
-    margin: 8px;
-    margin-top: 6px; }
-  main .botonCompra {
-    margin-top: 10px;
-    margin-bottom: 25px; }
-  main .input-flex {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px; }
-  main .formularioContacto, main .formularioContacto input, main .formularioContacto h2 {
-    text-align: center;
-    margin: 10px; }
-  main .preguntasFrecuentes {
-    text-align: center;
-    margin: 20px;
-    list-style: none; }
-  main .preguntasFrecuentes li {
-    list-style: none; }
-  main .preguntasFrecuentes div {
-    margin-top: 20px;
-    text-align: center;
-    align-items: center; }
-
-footer {
-  background-color: #0e0f19;
-  color: aliceblue;
-  /*h5*/ }
-  footer a {
-    color: aliceblue; }
-  footer .copy {
-    background-color: #e11444;
-    text-align: left;
-    grid-area: copy;
-    padding: 4px;
-    color: #0e0f19; }
-  footer .fuente-conectados {
-    margin-top: 15px; }
-  footer div .padre-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 200px;
-    margin-top: 20px; }
-  footer div .padre-flex svg {
-    margin: 10px; }
+    width: 155px;
+    height: 130px; } }

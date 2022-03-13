@@ -38,14 +38,10 @@
     height: $alto;
 }
 
-.card{
-    @include sizing (18rem, 20rem)
-}
-
 .mediosDePago{
-    @include sizing(330px, 140px)
+    @include sizing(280px, 140px)
 }
 
 .mediosDeEnvio{
-    @include sizing(205px, 150px )
+    @include sizing(280px, 150px )
 }
