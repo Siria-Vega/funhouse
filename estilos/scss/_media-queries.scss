@@ -1,8 +1,13 @@
 /*RESPONSIVE*/
 /*SMARTPHONE*/
 @media (max-width:576px){
-    /*--main--*/
-    div .col{
+    /*nav*/
+    .nav-link{
+        font-size: small;
+        margin: 1px;    
+    }
+    /*main*/
+    .col{
         display: flex;
         flex-direction: column;
         margin-left: 35px;
@@ -11,44 +16,14 @@
         text-align: center;
     }
 
-    .nav-link{
-        font-size: small;
-        margin: 1px;    
-    }
     .card{
         width: 18rem;
-    margin-bottom: 30px;
-       
-    }
-
-    /*paginas productos-faq-contacto-guia de talles*/
-    .portadaUno{
-        background-image: url(../../assets/carousel1.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 20vh;
-        text-align: center;
-    }
-
-    .portadaDos{
-        background-image: url(../../assets/carousel2.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 20vh;
-        text-align: center;
-    }
-
-    .portadaTres{
-        background-image: url(../../assets/carousel3.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 20vh;
-        text-align: center;
+        margin-bottom: 30px;  
     }
 
     /*guia de talles*/
     .table{
-        width: 250px;
+        width: 15rem;
     }
 
     /*productos*/
@@ -69,21 +44,7 @@
     footer .btn{
         margin-bottom: 20px;
     }
-    /*.mediosDePago{
-       /* width: 280px;
-        margin-top: 10px;
-        align-items: center;
-        filter: brightness(100%);
-        height: 130px;
-    }   
-
-    .mediosDeEnvio{
-        width: 280px;
-     height: 150px;
-    }*/
-
 }
-
 
 /*TABLET*/
 @media (min-width: 577px){
@@ -92,14 +53,14 @@
         margin: 1px;    
     }
 
-    /*--main--*/
+    /*main*/
     .card{
         width: 20rem;
     }
-        div .col{
+
+    .col{
         display: flex;
         flex-direction: column;
-        /*margin: 15px;*/
         align-items: center;
         margin-bottom: 25px;
         text-align: center;
@@ -113,36 +74,21 @@
         justify-content: flex-start;
         margin-left: 110px;
     }
-
-    /*paginas productos-faq-contacto-guia de talles*/
-    .portadaUno{
-        background-image: url(../../assets/carousel1.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 30vh;
-        text-align: center;
-    }
-
-    .portadaDos{
-        background-image: url(../../assets/carousel2.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 30vh;
-        text-align: center;
-    }
-
-    .portadaTres{
-        background-image: url(../../assets/carousel3.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 30vh;
-        text-align: center;
-    }
 }
 
 /*DESKTOP*/
 @media (min-width: 992px){
+    /*nav*/
+    .menu-centrado{
+        margin: auto;
+        text-align: center;
+    }
 
+    .nav-item{
+        padding: 10px;
+    }
+
+    /*main*/
     .row-desktop{
         width: 992px;
     }
@@ -151,39 +97,13 @@
         width: 14rem;
         height: 17rem;
     }
+
     .container-fluid{
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
         text-align: center;
-        /*margin: 20px;*/
     }
-
-   
-    /*paginas productos-faq-contacto-guia de talles*/
-    .portadaUno{
-        background-image: url(../../assets/carousel1.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 60vh;
-        text-align: center;
-    }
-
-    .portadaDos{
-        background-image: url(../../assets/carousel2.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 60vh;
-        text-align: center;
-    }
-
-    .portadaTres{
-        background-image: url(../../assets/carousel3.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 60vh;
-        text-align: center;
-    } 
 
     /*productos*/
     .productos-padre-flex{
@@ -191,15 +111,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .menu-centrado{
-        margin: auto;
-        text-align: center;
-    }
-
-    .nav-item{
-        padding: 10px;
     }
 
     /*footer*/
