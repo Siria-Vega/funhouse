@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/*Estilo general*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/*iconos faq - boton ingresar*/
+.preguntasFrecuentes svg, .boton-ingresar {
+  margin-right: 8px; }
+
+/*h1 h2*/
+.fuente-principal, .fuente-secundaria {
+  text-align: center;
+  margin: 15px; }
+
+/*guía de talles*/
+.table {
+  border: #e11444;
+  border-style: dashed;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  margin: auto; }
+
+/*RESPONSIVE*/
+/*SMARTPHONE*/
+@media (max-width: 420px) {
+  /*--main--*/
+  div .col {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+    text-align: center; }
+  .nav-link {
+    font-size: small;
+    margin: 1px; }
+  /*paginas productos-faq-contacto-guia de talles*/
+  .portadaUno {
+    background-image: url(../../assets/carousel1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    text-align: center; }
+  .portadaDos {
+    background-image: url(../../assets/carousel2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    text-align: center; }
+  .portadaTres {
+    background-image: url(../../assets/carousel3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    text-align: center; }
+  /*guia de talles*/
+  .table {
+    width: 250px; }
+  /*productos*/
+  .productos-padre-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*footer*/
+  .copy {
+    padding: 8px;
+    text-align: left;
+    grid-area: copy; }
+  .mediosDePago {
+    width: 280px;
+    margin-top: 10px;
+    align-items: center;
+    filter: brightness(100%); } }
+
+/*TABLET*/
+@media (min-width: 768px) {
+  /*--main--*/
+  div .col {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+    margin-bottom: 25px;
+    text-align: center; }
+  /*productos*/
+  .productos-padre-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 110px; }
+  /*paginas productos-faq-contacto-guia de talles*/
+  .portadaUno {
+    background-image: url(../../assets/carousel1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    text-align: center; }
+  .portadaDos {
+    background-image: url(../../assets/carousel2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    text-align: center; }
+  .portadaTres {
+    background-image: url(../../assets/carousel3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    text-align: center; } }
+
+/*DESKTOP*/
+@media (min-width: 992px) {
+  .cardFlex {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px; }
+  /*paginas productos-faq-contacto-guia de talles*/
+  .portadaUno {
+    background-image: url(../../assets/carousel1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    text-align: center; }
+  .portadaDos {
+    background-image: url(../../assets/carousel2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    text-align: center; }
+  .portadaTres {
+    background-image: url(../../assets/carousel3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    text-align: center; }
+  /*productos*/
+  .productos-padre-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .menu-centrado {
+    margin: auto;
+    text-align: center; }
+  .nav-item {
+    padding: 10px; } }
+
+/*Extends*/
+.rrss-tiktok, .rrss-facebook, .rrss-instagram, .mail-icon, .whatsapp-icon, .faq-icon {
+  width: 19px;
+  height: 19px;
+  fill: white;
+  filter: brightness(200%); }
+
+.rrss-facebook {
+  fill: #303097; }
+
+.rrss-instagram {
+  fill: #b6213a; }
+
+.mail-icon {
+  fill: white; }
+
+.whatsapp-icon {
+  fill: #1b7b16; }
+
+.faq-icon {
+  fill: #e11444; }
+
+/*Mixins*/
+.card {
+  width: 18rem;
+  height: 20rem; }
+
+.mediosDePago {
+  width: 330px;
+  height: 140px; }
+
+.mediosDeEnvio {
+  width: 205px;
+  height: 150px; }
+
+/*Anidamiento*/
+nav {
+  background-color: #0e0f19; }
+  nav .transicion {
+    transition: width 1s; }
+    nav .transicion:hover {
+      width: 290px; }
+  nav .nav-item {
+    text-align: center; }
+  nav .boton-logo {
+    background-color: #e11444; }
+  nav li {
+    color: #fffdfd; }
+  nav div .cart {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 22px;
+    height: 22px; }
+
+main {
+  background-color: #fffdfd;
+  /*sección productos*/
+  /*--contacto--*/
+  /*FAQ y guía de talles - boton menu*/ }
+  main .cardFlex {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px; }
+  main h1 {
+    text-align: center;
+    margin: 15px; }
+  main .imagenRemeraDonRamon {
+    margin-right: 110px;
+    margin-bottom: 30px;
+    border: 3px outset #e11444;
+    border-radius: 0.25rem; }
+  main .input-text {
+    text-align: center;
+    width: 83px; }
+  main .espacio-input {
+    margin: 8px;
+    margin-top: 6px; }
+  main .botonCompra {
+    margin-top: 10px;
+    margin-bottom: 25px; }
+  main .input-flex {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px; }
+  main .formularioContacto, main .formularioContacto input, main .formularioContacto h2 {
+    text-align: center;
+    margin: 10px; }
+  main .preguntasFrecuentes {
+    text-align: center;
+    margin: 20px;
+    list-style: none; }
+  main .preguntasFrecuentes li {
+    list-style: none; }
+  main .preguntasFrecuentes div {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center; }
+
+footer {
+  background-color: #0e0f19;
+  color: aliceblue;
+  /*h5*/ }
+  footer a {
+    color: aliceblue; }
+  footer .copy {
+    background-color: #e11444;
+    text-align: left;
+    grid-area: copy;
+    padding: 4px;
+    color: #0e0f19; }
+  footer .fuente-conectados {
+    margin-top: 15px; }
+  footer div .padre-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 20px; }
+  footer div .padre-flex svg {
+    margin: 10px; }

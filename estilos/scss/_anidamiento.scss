@@ -1,0 +1,141 @@
+/*Anidamiento*/
+$backgroundBlack: #0e0f19;
+$backgroundPink: #e11444;
+$backgroundLight: #fffdfd;
+
+nav{
+    background-color: $backgroundBlack;
+
+    .transicion{
+        transition: width 1s;
+        &:hover{
+        width: 290px;
+        }
+    }
+
+    .nav-item{
+        text-align: center;
+    }
+
+    .boton-logo{
+        background-color: $backgroundPink;
+    }
+
+    li{
+        color: $backgroundLight;
+    }
+
+    div{
+        .cart{
+            margin-right: 10px;
+            margin-top: 10px;
+            width: 22px;
+            height: 22px;
+        }    
+    }
+}
+
+main{
+    background-color: $backgroundLight;
+
+     .cardFlex{
+         display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 20px;
+    }
+
+    h1{
+        text-align: center;
+        margin: 15px;
+    }
+
+    /*sección productos*/
+    .imagenRemeraDonRamon{
+        margin-right: 110px;
+        margin-bottom: 30px;
+        border: 3px outset $backgroundPink;
+        border-radius: 0.25rem;
+    }
+
+    .input-text{
+        text-align: center;
+        width: 83px;
+    }
+
+    .espacio-input{
+        margin: 8px;
+        margin-top: 6px;
+    }
+
+    .botonCompra{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .input-flex{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    /*--contacto--*/
+    .formularioContacto, .formularioContacto input, .formularioContacto h2{
+        text-align: center;
+        margin: 10px;
+    }
+
+    /*FAQ y guía de talles - boton menu*/
+    .preguntasFrecuentes{
+        text-align: center;
+        margin: 20px;
+        list-style: none;
+    }
+
+    .preguntasFrecuentes li{
+        list-style: none;
+    }
+
+    .preguntasFrecuentes div{
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+footer{
+    background-color: $backgroundBlack;
+    color: aliceblue;
+
+    a{
+        color: aliceblue;
+    }
+
+    .copy{
+        background-color: $backgroundPink;
+        text-align: left;
+        grid-area: copy;
+        padding: 4px;
+        color: $backgroundBlack;
+    }
+    
+    /*h5*/
+    .fuente-conectados{
+        margin-top: 15px;
+    }
+
+    div{
+        .padre-flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .padre-flex svg{
+            margin: 10px;
+        }
+    }
+}

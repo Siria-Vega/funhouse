@@ -1,0 +1,168 @@
+/*RESPONSIVE*/
+/*SMARTPHONE*/
+@media (max-width:420px){
+    /*--main--*/
+    div .col{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-link{
+        font-size: small;
+        margin: 1px;    
+    }
+
+    /*paginas productos-faq-contacto-guia de talles*/
+    .portadaUno{
+        background-image: url(../../assets/carousel1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+        text-align: center;
+    }
+
+    .portadaDos{
+        background-image: url(../../assets/carousel2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+        text-align: center;
+    }
+
+    .portadaTres{
+        background-image: url(../../assets/carousel3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+        text-align: center;
+    }
+
+    /*guia de talles*/
+    .table{
+        width: 250px;
+    }
+
+    /*productos*/
+    .productos-padre-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*footer*/
+    .copy{
+        padding: 8px;
+        text-align: left;
+        grid-area: copy;
+    }
+
+    .mediosDePago{
+        width: 280px;
+        margin-top: 10px;
+        align-items: center;
+        filter: brightness(100%);
+    }   
+}
+
+/*TABLET*/
+@media (min-width: 768px){
+    /*--main--*/
+        div .col{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        align-items: center;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    /*productos*/
+        .productos-padre-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 110px;
+    }
+
+    /*paginas productos-faq-contacto-guia de talles*/
+    .portadaUno{
+        background-image: url(../../assets/carousel1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        text-align: center;
+    }
+
+    .portadaDos{
+        background-image: url(../../assets/carousel2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        text-align: center;
+    }
+
+    .portadaTres{
+        background-image: url(../../assets/carousel3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        text-align: center;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 992px){
+    .cardFlex{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 20px;
+    }
+
+    /*paginas productos-faq-contacto-guia de talles*/
+    .portadaUno{
+        background-image: url(../../assets/carousel1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        text-align: center;
+    }
+
+    .portadaDos{
+        background-image: url(../../assets/carousel2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        text-align: center;
+    }
+
+    .portadaTres{
+        background-image: url(../../assets/carousel3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        text-align: center;
+    } 
+
+    /*productos*/
+    .productos-padre-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-centrado{
+        margin: auto;
+        text-align: center;
+    }
+
+    .nav-item{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,51 @@
+/*Extends*/
+.rrss-tiktok{
+    width: 19px;
+    height: 19px;
+    fill: rgb(255, 255, 255);
+    filter: brightness(200%)
+}
+
+.rrss-facebook{
+    @extend .rrss-tiktok;
+    fill: rgb(48, 48, 151);
+}
+
+.rrss-instagram{
+    @extend .rrss-tiktok;
+    fill: rgb(182, 33, 58);
+}
+
+.mail-icon{
+    @extend .rrss-tiktok;
+    fill: rgb(255, 255, 255);
+}
+
+.whatsapp-icon{
+    @extend .rrss-tiktok;
+    fill: rgb(27, 123, 22);
+}
+
+.faq-icon{
+    @extend .rrss-tiktok;
+    fill: $backgroundPink;
+}
+
+
+/*Mixins*/
+@mixin sizing ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.card{
+    @include sizing (18rem, 20rem)
+}
+
+.mediosDePago{
+    @include sizing(330px, 140px)
+}
+
+.mediosDeEnvio{
+    @include sizing(205px, 150px )
+}
