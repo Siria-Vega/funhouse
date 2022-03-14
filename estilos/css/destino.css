@@ -91,7 +91,6 @@ main {
     text-align: center;
     margin: 15px; }
   main .imagenRemeraDonRamon {
-    margin-right: 110px;
     margin-bottom: 30px;
     border: 3px outset #e11444;
     border-radius: 0.25rem; }
@@ -171,6 +170,8 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; }
+  .imagenRemeraDonRamon {
+    margin: 10px; }
   /*footer*/
   .copy {
     padding: 8px;
@@ -197,9 +198,12 @@ footer {
   .productos-padre-flex {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 110px; } }
+    margin-left: 20px;
+    margin-right: 20px; }
+  .imagenRemeraDonRamon {
+    margin-right: 20px; } }
 
 /*DESKTOP*/
 @media (min-width: 992px) {
@@ -224,8 +228,10 @@ footer {
   .productos-padre-flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
+  .imagenRemeraDonRamon {
+    margin-right: 50px; }
   /*footer*/
   .mediosDePago {
     width: 270px;

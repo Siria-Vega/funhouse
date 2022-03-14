@@ -34,6 +34,10 @@
         justify-content: center;
     }
 
+    .imagenRemeraDonRamon {
+        margin: 10px;
+    }
+
     /*footer*/
     .copy{
         padding: 8px;
@@ -70,9 +74,14 @@
         .productos-padre-flex{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-left: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .imagenRemeraDonRamon {
+        margin-right: 20px;
     }
 }
 
@@ -109,8 +118,12 @@
     .productos-padre-flex{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .imagenRemeraDonRamon {
+        margin-right: 50px;
     }
 
     /*footer*/
