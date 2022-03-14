@@ -148,7 +148,7 @@ footer {
 @media (max-width: 576px) {
   /*nav*/
   .nav-link {
-    font-size: small;
+    font-size: medium;
     margin: 1px; }
   /*main*/
   .col {
